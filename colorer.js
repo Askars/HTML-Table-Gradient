@@ -58,7 +58,7 @@ function colorit(data) {
     for (var i = 1; i < this_row.length; i++) {
         var this_value = this_row[i];
         html_dom_cell = html_dom_row.insertCell(-1);
-        html_dom_cell.innerHTML = (this_value * 100).toFixed(2) + "%";
+        html_dom_cell.innerHTML = this_value;
         //console.log(this_value);
         if (this_value == 0) {
             html_dom_cell.style.backgroundColor = "black";
